@@ -1,0 +1,4 @@
+install:
+	- go get github.com/aktau/github-release
+script: ./travis-build.sh
+
