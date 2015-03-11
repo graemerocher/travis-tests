@@ -1,4 +1,7 @@
 language: bash
+before_install:
+        - echo "test"
+	- echo ${TRAVIS_BRANCH:1}
 install:
 	- go get github.com/aktau/github-release
 script: ./travis-build.sh
